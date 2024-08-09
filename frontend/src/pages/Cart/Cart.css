@@ -1,0 +1,128 @@
+.cart{
+    margin-top: 130px;
+}
+.cart-items-title{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: grey;
+    font-size: max(1vw,10px);
+}
+
+
+.cart-items-item{
+    margin-bottom: 10px;
+    color:black;
+    height: 80px;
+    background-color: rgb(253, 246, 245);
+    border-radius: 10px;
+    margin-left: -15px;
+    border: 1px dotted tomato;
+  }
+  .cart-items-item .remove {
+     color: rgb(226, 59, 59);
+     cursor: pointer;
+     align-items: center;
+     font-size: 35px;
+  }
+
+.cart-items-item img{
+  width: 100px;
+  border-radius: 10px;
+  margin-right: 8px;
+}
+
+.cart-bottom{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap:max(12vw,20px);
+    padding: 40px;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0px 0px 10px rgb(185, 182, 176);
+    background-color: white;
+  }
+.cart-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-total-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-total-details p{
+    margin: 10px 0px;
+}
+.cart-total-details b{
+    margin: 10px 0px;
+}
+
+.cart-bottom button{
+    border: none;
+    background-color: tomato;
+    border-radius: 10px;
+    height: 35px;
+    margin-bottom: 30px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cart-promocode{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 30%;
+    font-size: min(12px , 2vw);
+}
+.cart-promocode-input input:focus{
+    box-shadow: 0px 0px 8px #676767;
+    transition: 0.3s;
+}
+.cart-promocode p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #676767;
+    font-size: max(10px , 0.8vw);
+}
+
+.cart-promocode input{
+    border: none;
+    outline: none;
+    padding-left: 8px;
+    width: 100%;
+    margin-bottom: 25px;
+    font-weight: 200;
+    height: 30px;
+    font-size: max(12px,1.10vw);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px  rgb(185, 182, 176);
+    color: #676767;
+}
+hr{
+    color:wheat;
+    height: 0.1px;
+}
+
+@media (max-width:600px) {
+    .cart-items-item img{
+        width: 70px;
+    }
+    .cart-bottom{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .cart-promocode input{
+        width: 100px;
+    }
+    .cart-bottom button{
+     width: 100%;
+    }
+    .cart-items-title p{
+        font-size: 6px;
+    }
+}

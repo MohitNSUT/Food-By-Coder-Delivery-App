@@ -1,0 +1,91 @@
+.add{
+    margin-left: 3%;
+    margin-top: 20px;
+    width: 60%;
+    color:white;
+    padding: 10px;
+    background-color:rgb(84, 82, 82) ;
+    border-radius: 10px;
+    p{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    margin-bottom: 20px;
+}
+
+.add form{
+    gap: 20px;
+    padding: 20px;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-image-upload img{
+    width: 30%;
+    height: 20%px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px tomato;
+}
+
+.add-image-upload img:hover{
+    box-shadow: 0px 0px 10px white;
+    transition: 0.3s;
+    transform: scale(1.01);
+}
+.flex-col input, .flex-col select {
+    border: none;
+    background-color: wheat;
+    padding:10px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+    color: #6d6d6d;
+}
+.flex-col select{
+    appearance: none; 
+}
+
+.add-product-description textarea{
+   background-color: wheat;
+   padding: 10px;
+   border: none;
+   outline: none;
+   border-radius: 15px;
+   color: #6d6d6d;
+}
+.add-category-price{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.add-category , .add-price{
+    width: 40%;
+}
+
+.flex-col input:focus,.add-product-description textarea:focus, .add-category select:focus{
+    box-shadow: 0px 0px 10px white;
+    border: none;
+    transform: scale(1.005);
+    transition: 0.3s;
+}
+
+.add .add-btn{
+    border-radius: 50px;
+    background-color: tomato;
+    border: none;
+    color: white;
+    height: 40px;
+}
+
+.add .add-btn:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 6px white;
+    transition: 0.3s;
+}

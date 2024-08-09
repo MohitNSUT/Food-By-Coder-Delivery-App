@@ -1,0 +1,98 @@
+.login-popup{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #00000090;
+  display: grid;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.login-popup-container{
+  display: flex;
+  flex-direction: column;
+  color: #808080;
+  /* place-self: center; */
+  justify-self: center;
+  align-self: center;
+  gap: 25px;
+  padding: 25px;
+  width: max(23vw,330px);
+  background-color: white;
+  font-size: 14px;
+  animation: fadeIn 0.5s;
+  border-radius: 10px;
+}
+
+.login-popup-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:black;
+}
+
+.login-popup-title .cross{
+    border:2px solid red;
+    padding: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    color: red;
+}
+
+.login-popup-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.login-popup-inputs input{
+    border: none;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 50px;
+    outline: none;
+}
+.login-popup-inputs input:focus{
+    box-shadow: 0px 0px 10px #808080;
+    transition: 0.5s;
+}
+.login-popup-container button{
+    border: none;
+    background-color: tomato;
+    border-radius: 50px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+}
+.login-popup-container button:hover{
+    transform: scale(1.03);
+    transition: 0.4s;
+}
+.login-popup-condition{
+    display: flex;
+    align-items: start;
+    padding: 10px;
+    gap:10px;
+    margin-top: -15px;
+}
+.login-popup-condition input{
+    margin-top: 5px;
+}
+.login-popup p span {
+    color: tomato;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 10px;
+}
